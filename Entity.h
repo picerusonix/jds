@@ -65,7 +65,7 @@ public:
 
 	template <typename T, typename... TArgs>
 
-	T& addComponent(TArgs&&...mArgs)
+	T& addComponent(TArgs&&... mArgs)
 	{
 		T* c(new T(std::forward<TArgs>(mArgs)...));
 		c->entity = this;
